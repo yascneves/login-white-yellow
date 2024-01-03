@@ -50,6 +50,13 @@ span{
   width: 100%;
 }
 
+.second-container .image-small{
+  position: absolute;
+  top: 10%;
+  right: 0;
+  width: 35%;  
+}
+
 .first-container{
   position: absolute;
   top: 10%;
@@ -97,4 +104,16 @@ h1{
   height: 8%;
   border-radius: 100%;
   text-align: center;
+}
+
+.login input{
+  width: 100%;
+  background-color: #fff;
+  border-color: transparent;
+  border-radius: 40px;
+  padding: 10px;
+}
+
+.login i{
+  position: absolute;
 }
