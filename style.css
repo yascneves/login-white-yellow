@@ -1,63 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,600;6..12,700&family=Nunito:wght@400;500;600;700&family=Raleway:wght@200;300;400;500&family=Rubik:wght@300;400;500&display=swap');
 
-*{
+* {
   font-family: 'Nunito', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
-  background-color: #F8F8F8;
+body {
+  background-color: #f8f8f8;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   position: relative;
-
 }
 
-
-.background-yellow{
-  position:absolute;
+.background-yellow {
+  position: absolute;
   left: 0%;
   width: 35%;
   height: 100vh;
-  background-color: #FEB80A;
+  background-color: #feb80a;
 }
 
-.container{
-  background-color: #F6F6F8;
+.container {
+  background-color: #f6f6f8;
   width: 100%;
   height: 100%;
   border-radius: 30px;
   border: 5px solid rgba(225, 225, 225, 0.1);
-  box-shadow: 0 12px 15px 1px rgba(0, 0, 0,.3);
+  box-shadow: 0 12px 15px 1px rgba(0, 0, 0, 0.3);
   padding: 20px;
   padding-top: 30%;
-  position: relative; 
+  /* position: relative; */
 }
 
-span{
+.container .btn {
+  display: flex;
+  justify-content: center;
+}
+
+span {
   margin-left: 1%;
   font-size: 30px;
   font-family: 'Great Vibes';
   font-weight: 200;
 }
 
-.container img{
+.container img {
   margin: 1%;
   width: 100%;
 }
 
-.second-container .image-small{
-  position: absolute;
-  top: 10%;
-  right: 0;
-  width: 35%;  
+.container-title{
+  flex: 1;
 }
 
-.first-container{
+.content{
+  display: flex;
+  justify-content: space-between;
+}
+.second-container .image-small {
+
+  width: 25%;
+}
+
+.first-container {
   position: absolute;
   top: 10%;
   left: 20%;
@@ -66,7 +75,7 @@ span{
   z-index: 1;
 }
 
-h1{
+h1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,16 +83,16 @@ h1{
   font-weight: 800;
 }
 
-.second-container h1{
+.second-container h1 {
   justify-content: flex-start;
-} 
+}
 
-.first-container p{
+.first-container p {
   font-size: 15px;
 }
 
-.second-container{
-  position: absolute;
+.second-container {
+  position: absolute !important;
   top: 15%;
   right: 20%;
   width: 26%;
@@ -91,29 +100,69 @@ h1{
 }
 
 .container .text {
-  position: absolute;
+  position: absolute !important;
   top: 80%;
 }
 
 .arrow {
-  position: absolute;
+  position: absolute !important;
   top: 80%;
-  left: 90%;
-  background-color: #FEB80A;
-  width: 10%;
-  height: 8%;
-  border-radius: 100%;
-  text-align: center;
+  right: 0;
+  background-color: #feb80a;
+  height: 50px;
+  width: 30px;
+  border-radius: 100px 0 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.login input{
+.login input {
+  display: flex;
+  margin-top: 10%;
+  margin-bottom: 10%;
   width: 100%;
+  height: 100%;
   background-color: #fff;
   border-color: transparent;
   border-radius: 40px;
   padding: 10px;
 }
 
-.login i{
+.second-container .background-yellow {
+  width: 100%;
+  height: 50%;
+  z-index: 1;
+  top: 0;
+}
+
+.second-container *:not(.background-yellow){
+  z-index: 2;
+  position: relative;
+}
+
+.login i {
+  position: absolute !important;
+  right: 5%;
+  margin-top: 5%;
+  z-index: 3 !important;
+}
+
+.btn button {
+  height: 25px;
+  width: 25px;
+  color: #f6f6f8;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+}
+
+.second-container .background-paint {
+  width: 100%;
+  z-index: 1;
+  left: 0;
+  top: 30%;
   position: absolute;
 }
